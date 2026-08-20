@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AK Construction — Begusarai, Bihar | Ghar Banwayein Sahi Budget Mein</title>
+<meta name="description" content="AK Construction — Begusarai, Bihar based home design aur construction company. 2D/3D naksha, interior-exterior design, aur turnkey ghar construction. Free cost estimate abhi paayein.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blueprint: #0E2A47;
+    --blueprint-deep: #091C33;
+    --grid-line: rgba(255,255,255,0.08);
+    --grid-line-strong: rgba(255,255,255,0.16);
+    --paper: #F7F3EA;
+    --paper-dim: #EFE9DA;
+    --ink: #1B2430;
+    --ink-soft: #4A5568;
+    --ochre: #E8A93B;
+    --ochre-deep: #C88A22;
+    --terracotta: #D2653B;
+    --terracotta-deep: #B1502B;
+    --cream-text: #F3EFE3;
+    --line-on-dark: rgba(243,239,227,0.35);
+
+    --font-display: 'Fraunces', serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+
+    --radius: 14px;
+    --container: 1180px;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
+  }
+
+  body{
+    font-family:var(--font-body);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:64px; /* room for mobile sticky bar */
+  }
+
+  a{ color:inherit; text-decoration:none; }
+  img{ max-width:100%; display:block; }
+  button{ font-family:inherit; cursor:pointer; border:none; background:none; }
+
+  :focus-visible{
+    outline:3px solid var(--ochre);
+    outline-offset:2px;
+  }
+
+  .wrap{ max-width:var(--container); margin:0 auto; padding:0 24px; }
+
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:18px; height:1px;
+    background:currentColor;
+    display:inline-block;
+  }
+
+  h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:1.1; }
+
+  /* ============ BUTTONS ============ */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 26px;
+    border-radius:999px;
+    font-weight:600;
+    font-size:15px;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    white-space:nowrap;
+  }
+  .btn:active{ transform:scale(0.97); }
+  .btn-ochre{
+    background:var(--ochre);
+    color:var(--blueprint-deep);
+    box-shadow:0 4px 0 var(--ochre-deep);
+  }
+  .btn-ochre:hover{ background:#EEB755; }
+  .btn-terracotta{
+    background:var(--terracotta);
+    color:#fff;
+    box-shadow:0 4px 0 var(--terracotta-deep);
+  }
+  .btn-terracotta:hover{ background:#DA7248; }
+  .btn-outline{
+    background:transparent;
+    border:1.5px solid currentColor;
+    color:inherit;
+  }
+  .btn-outline:hover{ background:rgba(0,0,0,0.04); }
+  .btn-sm{ padding:10px 18px; font-size:13.5px; }
+
+  /* ============ HEADER ============ */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--blueprint);
+    border-bottom:1px solid var(--grid-line-strong);
+  }
+  .header-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px;
+    max-width:var(--container); margin:0 auto;
+  }
+  .logo{
+    display:flex; align-items:center; gap:10px;
+    color:var(--cream-text);
+  }
+  .logo-mark{
+    width:38px; height:38px;
+    border:1.5px solid var(--ochre);
+    border-radius:8px;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--font-mono);
+    font-weight:600;
+    color:var(--ochre);
+    font-size:14px;
+  }
+  .logo-text{ font-family:var(--font-display); font-size:19px; font-weight:600; letter-spacing:0.01em; }
+  .logo-sub{ font-family:var(--font-mono); font-size:10px; letter-spacing:0.1em; color:var(--line-on-dark); text-transform:uppercase; }
+
+  nav.main-nav{ display:flex; gap:28px; align-items:center; }
+  nav.main-nav a{
+    color:var(--cream-text); opacity:0.82; font-size:14.5px; font-weight:500;
+  }
+  nav.main-nav a:hover{ opacity:1; }
+
+  .header-cta{ display:flex; gap:10px; }
+  .nav-toggle{ display:none; }
+
+  @media (max-width:920px){
+    nav.main-nav{ display:none; }
+    .header-cta .btn-label{ display:none; }
+    .header-cta .btn{ padding:12px; }
+  }
+
+  /* ============ MOBILE STICKY BAR ============ */
+  .mobile-bar{
+    position:fixed; bottom:0; left:0; right:0; z-index:60;
+    display:none;
+    background:var(--blueprint-deep);
+    border-top:1px solid var(--grid-line-strong);
+  }
+  .mobile-bar-inner{
+    display:flex;
+  }
+  .mobile-bar a{
+    flex:1;
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    padding:16px 8px;
+    font-weight:700; font-size:14.5px;
+    color:#fff;
+  }
+  .mobile-bar a.call{ background:var(--ochre); color:var(--blueprint-deep); }
+  .mobile-bar a.wa{ background:var(--terracotta); }
+  @media (max-width:920px){ .mobile-bar{ display:block; } }
+
+  /* ============ BLUEPRINT SECTION (hero + dark bands) ============ */
+  .blueprint{
+    background:
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0/44px 44px,
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0/44px 44px,
+      var(--blueprint);
+    color:var(--cream-text);
+    position:relative;
+    overflow:hidden;
+  }
+  .corner-mark{
+    position:absolute; width:26px; height:26px;
+    border:1.5px solid var(--line-on-dark);
+    opacity:0.7;
+  }
+  .corner-mark::before, .corner-mark::after{ content:""; position:absolute; background:var(--line-on-dark); }
+  .corner-mark.tl{ top:20px; left:20px; border-right:none; border-bottom:none; }
+  .corner-mark.tr{ top:20px; right:20px; border-left:none; border-bottom:none; }
+  .corner-mark.bl{ bottom:20px; left:20px; border-right:none; border-top:none; }
+  .corner-mark.br{ bottom:20px; right:20px; border-left:none; border-top:none; }
+
+  /* ============ HERO ============ */
+  .hero{ padding:72px 0 96px; }
+  .hero-grid{
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;
+  }
+  .hero-eyebrow{ color:var(--ochre); margin-bottom:22px; }
+  .hero h1{
+    font-size:clamp(34px, 4.6vw, 56px);
+    color:#fff;
+    margin-bottom:20px;
+    letter-spacing:-0.01em;
+  }
+  .hero h1 em{ font-style:italic; color:var(--ochre); }
+  .hero p.lede{
+    font-size:17.5px;
+    color:var(--line-on-dark);
+    color:rgba(243,239,227,0.82);
+    max-width:520px;
+    margin-bottom:32px;
+  }
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-bottom:34px; }
+  .hero-meta{
+    display:flex; gap:26px; flex-wrap:wrap;
+    font-family:var(--font-mono); font-size:12.5px; color:rgba(243,239,227,0.55);
+  }
+  .hero-meta span{ display:flex; align-items:center; gap:6px; }
+  .dot{ width:6px; height:6px; border-radius:50%; background:var(--ochre); display:inline-block; }
+
+  /* blueprint house illustration */
+  .plan-card{
+    background:rgba(9,28,51,0.4);
+    border:1px solid var(--grid-line-strong);
+    border-radius:var(--radius);
+    padding:22px;
+    position:relative;
+  }
+  .plan-card svg{ width:100%; height:auto; }
+  .plan-label-row{
+    display:flex; justify-content:space-between; align-items:center;
+    font-family:var(--font-mono); font-size:11px; letter-spacing:0.08em;
+    color:rgba(243,239,227,0.5);
+    margin-top:14px;
+    text-transform:uppercase;
+  }
+
+  @media (max-width:920px){
+    .hero-grid{ grid-template-columns:1fr; }
+    .hero{ padding:44px 0 64px; }
+    .plan-card{ order:-1; }
+  }
+
+  /* ============ TRUST BAR ============ */
+  .trust-bar{
+    background:var(--blueprint-deep);
+    border-top:1px solid var(--grid-line);
+    padding:26px 0;
+  }
+  .trust-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
+    text-align:center;
+  }
+  .trust-item .num{
+    font-family:var(--font-display); font-size:clamp(22px,2.6vw,32px); font-weight:600; color:var(--ochre);
+  }
+  .trust-item .label{
+    font-family:var(--font-mono); font-size:11.5px; color:rgba(243,239,227,0.6);
+    text-transform:uppercase; letter-spacing:0.06em; margin-top:4px;
+  }
+  @media (max-width:700px){ .trust-grid{ grid-template-columns:repeat(2,1fr); row-gap:26px; } }
+
+  /* ============ SECTION SHELL ============ */
+  section{ padding:88px 0; }
+  .section-head{ max-width:640px; margin-bottom:52px; }
+  .section-head .eyebrow{ color:var(--terracotta-deep); margin-bottom:14px; }
+  .section-head h2{ font-size:clamp(26px,3.4vw,38px); color:var(--ink); margin-bottom:14px; }
+  .section-head p{ color:var(--ink-soft); font-size:16px; }
+  @media (max-width:700px){ section{ padding:60px 0; } }
+
+  /* ============ SERVICES ============ */
+  .services-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
+  }
+  .service-card{
+    background:#fff;
+    border:1px solid rgba(27,36,48,0.08);
+    border-radius:var(--radius);
+    padding:28px 24px;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .service-card:hover{ transform:translateY(-3px); box-shadow:0 14px 30px rgba(14,42,71,0.1); }
+  .service-icon{
+    width:46px; height:46px;
+    border-radius:10px;
+    background:var(--paper-dim);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:18px;
+    color:var(--terracotta);
+  }
+  .service-card h3{ font-size:19px; margin-bottom:8px; color:var(--ink); }
+  .service-card p{ font-size:14.5px; color:var(--ink-soft); margin-bottom:16px; }
+  .service-card .learn{
+    font-family:var(--font-mono); font-size:12.5px; color:var(--terracotta-deep); font-weight:600;
+    display:inline-flex; align-items:center; gap:6px;
+  }
+  @media (max-width:900px){ .services-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:600px){ .services-grid{ grid-template-columns:1fr; } }
+
+  /* ============ CALCULATOR ============ */
+  .calc-shell{
+    background:var(--blueprint);
+    background:
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0/34px 34px,
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0/34px 34px,
+      var(--blueprint);
+    border-radius:20px;
+    padding:44px;
+    color:var(--cream-text);
+    position:relative;
+    overflow:hidden;
+  }
+  .calc-grid{ display:grid; grid-template-columns:1fr 1fr; gap:44px; }
+  .calc-form label{
+    display:block; font-family:var(--font-mono); font-size:11.5px; text-transform:uppercase; letter-spacing:0.07em;
+    color:rgba(243,239,227,0.6); margin-bottom:8px;
+  }
+  .field{ margin-bottom:20px; }
+  .field input[type=number], .field select{
+    width:100%; padding:13px 14px;
+    background:rgba(247,243,234,0.06);
+    border:1px solid var(--grid-line-strong);
+    border-radius:8px;
+    color:#fff; font-size:15px; font-family:var(--font-body);
+  }
+  .field input[type=number]:focus, .field select:focus{ border-color:var(--ochre); }
+  .tier-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+  .tier-btn{
+    padding:12px 8px; border-radius:8px; text-align:center;
+    border:1px solid var(--grid-line-strong);
+    font-size:13px; font-weight:600;
+    background:rgba(247,243,234,0.04); color:var(--cream-text);
+  }
+  .tier-btn small{ display:block; font-family:var(--font-mono); font-weight:400; font-size:10.5px; opacity:0.6; margin-top:3px; }
+  .tier-btn.active{ background:var(--ochre); color:var(--blueprint-deep); border-color:var(--ochre); }
+
+  .calc-result{
+    background:rgba(9,28,51,0.55);
+    border:1px solid var(--grid-line-strong);
+    border-radius:14px;
+    padding:28px;
+    display:flex; flex-direction:column; justify-content:space-between;
+  }
+  .result-label{ font-family:var(--font-mono); font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:rgba(243,239,227,0.55); margin-bottom:10px; }
+  .result-amount{ font-family:var(--font-display); font-size:clamp(30px,4vw,44px); color:var(--ochre); font-weight:600; margin-bottom:18px; }
+  .breakup{ display:flex; flex-direction:column; gap:10px; margin-bottom:22px; }
+  .breakup-row{ display:flex; justify-content:space-between; align-items:center; font-size:13.5px; }
+  .breakup-bar{ height:6px; border-radius:4px; background:rgba(243,239,227,0.12); overflow:hidden; margin-top:5px; }
+  .breakup-fill{ height:100%; background:var(--terracotta); }
+  .calc-disclaimer{
+    font-size:12.5px; color:rgba(243,239,227,0.55); border-top:1px dashed var(--grid-line-strong);
+    padding-top:16px; margin-top:auto; margin-bottom:16px;
+  }
+  @media (max-width:900px){ .calc-grid{ grid-template-columns:1fr; } .calc-shell{ padding:28px 22px; } }
+
+  /* ============ HOME LOAN ============ */
+  .loan-wrap{
+    display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;
+  }
+  .loan-steps{ display:flex; flex-direction:column; gap:0; }
+  .loan-step{ display:flex; gap:18px; padding:20px 0; border-bottom:1px solid rgba(27,36,48,0.08); }
+  .loan-step:last-child{ border-bottom:none; }
+  .step-num{
+    font-family:var(--font-mono); font-size:13px; color:var(--terracotta-deep); font-weight:700;
+    width:30px; flex-shrink:0; padding-top:2px;
+  }
+  .loan-step h4{ font-size:16px; margin-bottom:5px; color:var(--ink); font-family:var(--font-body); font-weight:700; }
+  .loan-step p{ font-size:14px; color:var(--ink-soft); }
+  .docs-note{
+    margin-top:22px; background:var(--paper-dim); border-radius:10px; padding:16px 18px; font-size:13.5px; color:var(--ink-soft);
+  }
+  .docs-note strong{ color:var(--ink); }
+
+  .emi-card{
+    background:#fff; border:1px solid rgba(27,36,48,0.08); border-radius:var(--radius); padding:28px;
+  }
+  .emi-card h3{ font-size:18px; margin-bottom:4px; color:var(--ink); }
+  .emi-card .sub{ font-size:13px; color:var(--ink-soft); margin-bottom:22px; }
+  .emi-field{ margin-bottom:18px; }
+  .emi-field label{ display:flex; justify-content:space-between; font-size:13px; font-weight:600; color:var(--ink); margin-bottom:8px; }
+  .emi-field .val{ font-family:var(--font-mono); color:var(--terracotta-deep); }
+  input[type=range]{ width:100%; accent-color:var(--terracotta); }
+  .emi-out{
+    background:var(--paper-dim); border-radius:10px; padding:18px; margin-top:8px;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .emi-out .amt{ font-family:var(--font-display); font-size:26px; color:var(--terracotta-deep); font-weight:600; }
+  .emi-out .lbl{ font-family:var(--font-mono); font-size:11px; text-transform:uppercase; color:var(--ink-soft); }
+  .loan-disclaimer{ font-size:12px; color:var(--ink-soft); margin-top:14px; }
+  @media (max-width:900px){ .loan-wrap{ grid-template-columns:1fr; gap:36px; } }
+
+  /* ============ GALLERY ============ */
+  .gallery-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .gallery-item{
+    aspect-ratio:1/1; border-radius:12px; overflow:hidden; position:relative;
+    background:var(--blueprint);
+    background-image:
+      linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size:20px 20px;
+    display:flex; align-items:center; justify-content:center; text-align:center; padding:16px;
+    border:1px dashed rgba(255,255,255,0.25);
+  }
+  .gallery-item span{ font-family:var(--font-mono); font-size:11.5px; color:rgba(243,239,227,0.6); line-height:1.5; }
+  @media (max-width:900px){ .gallery-grid{ grid-template-columns:repeat(2,1fr); } }
+
+  /* ============ WHY CHOOSE ============ */
+  .why-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  .why-item{ display:flex; gap:14px; }
+  .why-num{ font-family:var(--font-mono); font-size:12px; color:var(--terracotta-deep); font-weight:700; padding-top:3px; }
+  .why-item h4{ font-size:15.5px; margin-bottom:6px; color:var(--ink); }
+  .why-item p{ font-size:13.5px; color:var(--ink-soft); }
+  @media (max-width:900px){ .why-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:600px){ .why-grid{ grid-template-columns:1fr; } }
+
+  /* ============ TESTIMONIALS ============ */
+  .testi-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+  .testi-card{
+    border:1.5px dashed rgba(27,36,48,0.22);
+    border-radius:var(--radius);
+    padding:26px;
+    background:var(--paper-dim);
+    color:var(--ink-soft);
+  }
+  .testi-card .ph-title{ font-family:var(--font-mono); font-size:11.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--terracotta-deep); margin-bottom:10px; }
+  .testi-card p{ font-size:14px; }
+  @media (max-width:700px){ .testi-grid{ grid-template-columns:1fr; } }
+
+  /* ============ FAQ ============ */
+  .faq-list{ max-width:760px; }
+  .faq-item{ border-bottom:1px solid rgba(27,36,48,0.1); }
+  .faq-q{
+    width:100%; display:flex; justify-content:space-between; align-items:center;
+    padding:20px 0; text-align:left; font-weight:600; font-size:16px; color:var(--ink);
+  }
+  .faq-q .icon{ font-family:var(--font-mono); color:var(--terracotta-deep); transition:transform .2s ease; font-size:18px; }
+  .faq-item.open .faq-q .icon{ transform:rotate(45deg); }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .25s ease; }
+  .faq-a p{ padding-bottom:20px; color:var(--ink-soft); font-size:14.5px; max-width:600px; }
+
+  /* ============ CONTACT ============ */
+  .contact-shell{
+    display:grid; grid-template-columns:1fr 1fr; gap:0;
+    border-radius:20px; overflow:hidden;
+    border:1px solid rgba(27,36,48,0.08);
+  }
+  .contact-form-side{ background:#fff; padding:44px; }
+  .contact-map-side{ background:var(--blueprint); color:var(--cream-text); padding:44px; display:flex; flex-direction:column; }
+  .contact-form-side h3{ font-size:22px; margin-bottom:6px; color:var(--ink); }
+  .contact-form-side .sub{ color:var(--ink-soft); font-size:14px; margin-bottom:26px; }
+  .form-row{ margin-bottom:16px; }
+  .form-row label{ display:block; font-size:13px; font-weight:600; color:var(--ink); margin-bottom:6px; }
+  .form-row input, .form-row textarea{
+    width:100%; padding:12px 14px; border:1px solid rgba(27,36,48,0.15); border-radius:8px; font-size:14.5px; font-family:inherit;
+  }
+  .form-row input:focus, .form-row textarea:focus{ border-color:var(--terracotta); }
+  .form-two{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+
+  .contact-map-side h4{ font-family:var(--font-display); font-size:19px; margin-bottom:14px; }
+  .addr-line{ font-size:14px; color:rgba(243,239,227,0.85); margin-bottom:8px; display:flex; gap:10px; }
+  .addr-line .k{ font-family:var(--font-mono); font-size:10.5px; color:var(--ochre); text-transform:uppercase; width:70px; flex-shrink:0; padding-top:2px; }
+  .map-embed{ margin-top:22px; border-radius:10px; overflow:hidden; border:1px solid var(--grid-line-strong); }
+  .map-embed iframe{ width:100%; height:220px; border:0; filter:grayscale(0.2) contrast(1.05); }
+  .contact-socials{ margin-top:auto; padding-top:24px; display:flex; gap:10px; }
+  .soc-btn{ width:38px; height:38px; border-radius:8px; border:1px solid var(--grid-line-strong); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-size:12px; }
+
+  @media (max-width:900px){ .contact-shell{ grid-template-columns:1fr; } .form-two{ grid-template-columns:1fr; } }
+
+  /* ============ FOOTER ============ */
+  footer{ background:var(--blueprint-deep); color:rgba(243,239,227,0.6); padding:50px 0 90px; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; margin-bottom:36px; }
+  .footer-brand .logo-text{ color:var(--cream-text); }
+  .footer-brand p{ font-size:13.5px; margin-top:14px; max-width:280px; line-height:1.6; }
+  footer h5{ font-family:var(--font-mono); font-size:11.5px; text-transform:uppercase; letter-spacing:0.08em; color:var(--ochre); margin-bottom:14px; }
+  footer ul{ list-style:none; display:flex; flex-direction:column; gap:9px; }
+  footer ul a{ font-size:13.5px; }
+  footer ul a:hover{ color:var(--cream-text); }
+  .footer-bottom{ border-top:1px solid rgba(255,255,255,0.08); padding-top:22px; font-size:12px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+  @media (max-width:800px){ .footer-grid{ grid-template-columns:1fr; } }
+  @media (max-width:920px){ footer{ padding-bottom:90px; } }
+
+  /* location tags */
+  .tag-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+  .tag-chip{
+    font-family:var(--font-mono); font-size:12px; padding:7px 14px; border-radius:999px;
+    border:1px solid rgba(27,36,48,0.15); color:var(--ink-soft);
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">AK</span>
+      <span>
+        <span class="logo-text">AK Construction</span><br>
+        <span class="logo-sub">Begusarai · Bihar</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="#services">Services</a>
+      <a href="#calculator">Cost Calculator</a>
+      <a href="#loan">Home Loan Help</a>
+      <a href="#gallery">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline btn-sm" href="tel:+918770418045" style="color:var(--cream-text)"><span class="btn-label">📞 Call Now</span></a>
+      <a class="btn btn-ochre btn-sm" href="https://wa.me/918770418045?text=Namaste%2C%20mujhe%20ghar%20banwana%20hai%2C%20please%20details%20bhejein." target="_blank" rel="noopener"><span class="btn-label">WhatsApp</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="blueprint hero" id="top" style="padding-top:64px;">
+  <span class="corner-mark tl"></span>
+  <span class="corner-mark tr"></span>
+  <span class="corner-mark bl"></span>
+  <span class="corner-mark br"></span>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow hero-eyebrow">Naksha se Nींव tak · GST Registered</div>
+      <h1>Apna Sapno Ka <em>Ghar</em>, Sahi Budget Mein, Sahi Time Par.</h1>
+      <p class="lede">AK Construction, Begusarai ki apni team hai — naksha design se leke poora ghar banane tak, ek hi jagah, seedha engineer se baat, koi middleman nahi.</p>
+      <div class="hero-actions">
+        <a href="#calculator" class="btn btn-ochre">Free Cost Estimate Paayein →</a>
+        <a href="https://wa.me/918770418045?text=Namaste%2C%20mujhe%20ghar%20banwana%20hai%2C%20please%20details%20bhejein." target="_blank" rel="noopener" class="btn btn-outline" style="color:#fff;">WhatsApp Par Baat Karein</a>
+      </div>
+      <div class="hero-meta">
+        <span><i class="dot"></i> Begusarai · Munger · Patna · Samastipur · Khagaria</span>
+        <span><i class="dot"></i> GSTIN 10DSMPK8258P1Z1</span>
+      </div>
+    </div>
+
+    <div class="plan-card">
+      <svg viewBox="0 0 420 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Sample house floor plan blueprint">
+        <rect x="30" y="30" width="360" height="260" stroke="#E8A93B" stroke-width="1.5" fill="none"/>
+        <line x1="30" y1="140" x2="240" y2="140" stroke="#F3EFE3" stroke-opacity="0.55" stroke-width="1.2"/>
+        <line x1="240" y1="30" x2="240" y2="290" stroke="#F3EFE3" stroke-opacity="0.55" stroke-width="1.2"/>
+        <line x1="240" y1="200" x2="390" y2="200" stroke="#F3EFE3" stroke-opacity="0.55" stroke-width="1.2"/>
+        <text x="55" y="95" fill="#F3EFE3" font-family="IBM Plex Mono, monospace" font-size="11" opacity="0.75">BEDROOM</text>
+        <text x="55" y="112" fill="#F3EFE3" font-family="IBM Plex Mono, monospace" font-size="9" opacity="0.45">12' x 11'</text>
+        <text x="55" y="225" fill="#F3EFE3" font-family="IBM Plex Mono, monospace" font-size="11" opacity="0.75">HALL</text>
+        <text x="55" y="242" fill="#F3EFE3" font-family="IBM Plex Mono, monospace" font-size="9" opacity="0.45">14' x 16'</text>
+        <text x="262" y="95" fill="#F3EFE3" font-family="IBM Plex Mono, monospace" font-size="11" opacity="0.75">KITCHEN</text>
+        <text x="262" y="112" fill="#F3EFE3" font-family="IBM Plex Mono, monospace" font-size="9" opacity="0.45">9' x 10'</text>
+        <text x="262" y="180" fill="#F3EFE3" font-family="IBM Plex Mono, monospace" font-size="11" opacity="0.75">BEDROOM 2</text>
+        <text x="262" y="255" fill="#F3EFE3" font-family="IBM Plex Mono, monospace" font-size="11" opacity="0.75">BATH</text>
+        <!-- dimension lines -->
+        <line x1="30" y1="305" x2="390" y2="305" stroke="#E8A93B" stroke-width="1"/>
+        <line x1="30" y1="300" x2="30" y2="310" stroke="#E8A93B" stroke-width="1"/>
+        <line x1="390" y1="300" x2="390" y2="310" stroke="#E8A93B" stroke-width="1"/>
+        <text x="185" y="318" fill="#E8A93B" font-family="IBM Plex Mono, monospace" font-size="9">30'-0"</text>
+        <line x1="10" y1="30" x2="10" y2="290" stroke="#E8A93B" stroke-width="1"/>
+        <text x="-70" y="164" fill="#E8A93B" font-family="IBM Plex Mono, monospace" font-size="9" transform="rotate(-90 12 164)">22'-0"</text>
+      </svg>
+      <div class="plan-label-row">
+        <span>Sample Naksha · Scale 1:100</span>
+        <span>AK Construction</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<div class="blueprint trust-bar">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><div class="num">3</div><div class="label">In-house Engineers</div></div>
+    <div class="trust-item"><div class="num">8+</div><div class="label">Bihar Districts Served</div></div>
+    <div class="trust-item"><div class="num">100%</div><div class="label">GST Registered Billing</div></div>
+    <div class="trust-item"><div class="num">1:1</div><div class="label">Direct Engineer Contact</div></div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Kya Kya Karte Hain</div>
+      <h2>Naksha se Finishing tak, Sab Kuch Ek Chhat Ke Neeche</h2>
+      <p>Chhota renovation ho ya poora naya ghar — AK Construction har step mein saath deta hai.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>2D / 3D Naksha</h3>
+        <p>Aapki zameen aur zarurat ke hisaab se sahi, Vastu-friendly ghar ka naksha — approval ke liye ready.</p>
+        <span class="learn">Jaanein Zyada →</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+        </div>
+        <h3>Poora Ghar Construction</h3>
+        <p>Foundation se roof tak turnkey construction — material, mistri, supervision, sab humara zimma.</p>
+        <span class="learn">Jaanein Zyada →</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-6h6v6"/></svg>
+        </div>
+        <h3>Exterior Design</h3>
+        <p>Ghar ki bahar ki look — elevation, color, texture — jo mohalle mein sabse alag dikhe.</p>
+        <span class="learn">Jaanein Zyada →</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 14h16M14 4v16"/></svg>
+        </div>
+        <h3>Interior Design</h3>
+        <p>Room layout, false ceiling, modular kitchen, wardrobe — budget ke hisaab se sundar design.</p>
+        <span class="learn">Jaanein Zyada →</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M4 8l8-5 8 5M4 8v10M20 8v10M4 18l8 5 8-5"/></svg>
+        </div>
+        <h3>Architectural Design</h3>
+        <p>Structural planning jo strong bhi ho aur zyada mehenga bhi na pade — engineering-first approach.</p>
+        <span class="learn">Jaanein Zyada →</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20c3-6 6-6 9 0M12 20c3-6 6-6 9 0"/><circle cx="7" cy="8" r="2"/><circle cx="17" cy="6" r="2"/></svg>
+        </div>
+        <h3>Landscaping &amp; Civil Work</h3>
+        <p>Boundary wall, gate, driveway, chhoti bagiya — bahar ka kaam bhi hum hi sambhalte hain.</p>
+        <span class="learn">Jaanein Zyada →</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALCULATOR ============ -->
+<section id="calculator" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Turant Andaza</div>
+      <h2>Project Cost Calculator</h2>
+      <p>Area aur quality daalein, turant ek anumaanit budget dekhein. Final quote free site visit ke baad milega.</p>
+    </div>
+
+    <div class="calc-shell">
+      <span class="corner-mark tl"></span>
+      <span class="corner-mark br"></span>
+      <div class="calc-grid">
+        <div class="calc-form">
+          <div class="field">
+            <label for="area">Built-up Area (Sq. Ft.)</label>
+            <input type="number" id="area" min="200" max="20000" value="1200" step="50">
+          </div>
+          <div class="field">
+            <label for="floors">Number of Floors</label>
+            <select id="floors">
+              <option value="1">Ground Floor Only</option>
+              <option value="2">Ground + 1</option>
+              <option value="3">Ground + 2</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="city">City / Location</label>
+            <select id="city">
+              <option value="1">Begusarai</option>
+              <option value="0.98">Khagaria</option>
+              <option value="0.98">Samastipur</option>
+              <option value="0.97">Munger</option>
+              <option value="1.08">Patna</option>
+              <option value="1.02">Muzaffarpur</option>
+              <option value="1.03">Darbhanga</option>
+              <option value="1.03">Bhagalpur</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Construction Quality</label>
+            <div class="tier-row" id="tierRow">
+              <div class="tier-btn" data-rate="1450">Basic<small>₹1,450/sqft</small></div>
+              <div class="tier-btn active" data-rate="1750">Standard<small>₹1,750/sqft</small></div>
+              <div class="tier-btn" data-rate="2200">Premium<small>₹2,200/sqft</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-result">
+          <div>
+            <div class="result-label">Anumaanit Total Cost</div>
+            <div class="result-amount" id="resultAmount">₹21,00,000 – ₹23,10,000</div>
+            <div class="breakup">
+              <div class="breakup-row"><span>Structure &amp; RCC</span><span>~45%</span></div>
+              <div class="breakup-bar"><div class="breakup-fill" style="width:45%;"></div></div>
+              <div class="breakup-row"><span>Finishing (tiles, paint, doors)</span><span>~35%</span></div>
+              <div class="breakup-bar"><div class="breakup-fill" style="width:35%; background:var(--ochre);"></div></div>
+              <div class="breakup-row"><span>Electrical &amp; Plumbing</span><span>~20%</span></div>
+              <div class="breakup-bar"><div class="breakup-fill" style="width:20%; background:#8FB6D9;"></div></div>
+            </div>
+          </div>
+          <div>
+            <div class="calc-disclaimer">Yeh sirf ek anumaan hai (market rates ke aadhar par). Sahi quote plot ki location, soil aur design ke baad hi diya jaata hai.</div>
+            <a href="#contact" class="btn btn-terracotta" style="width:100%;">Detailed Quote Mangwayein →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOME LOAN ============ -->
+<section id="loan">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Paise Ki Chinta Mat Karein</div>
+      <h2>Home Loan Sahayata</h2>
+      <p>Hum bank nahi hain, lekin humari team aapko construction loan ke liye sahi kaagzaat aur bank partners tak pahunchne mein madad karti hai.</p>
+    </div>
+
+    <div class="loan-wrap">
+      <div>
+        <div class="loan-steps">
+          <div class="loan-step">
+            <div class="step-num">01</div>
+            <div><h4>Apni Zarurat Batayein</h4><p>Plot size, budget aur city humein WhatsApp ya form se bhejein.</p></div>
+          </div>
+          <div class="loan-step">
+            <div class="step-num">02</div>
+            <div><h4>Kaagzaat Taiyaar Karayein</h4><p>Naksha, cost estimate aur zameen ke documents — loan ke liye ready karwayein humari madad se.</p></div>
+          </div>
+          <div class="loan-step">
+            <div class="step-num">03</div>
+            <div><h4>Bank Partner Se Judein</h4><p>Hum aapko humare bank/NBFC partners ke sampark mein laate hain — aage ki process bank khud handle karta hai.</p></div>
+          </div>
+        </div>
+        <div class="docs-note">
+          <strong>Aam taur par chahiye:</strong> Zameen/khatiyan ke kaagzaat, ID proof (Aadhar/PAN), income proof (salary slip ya business proof), aur ghar ka naksha/cost estimate.
+        </div>
+        <p class="loan-disclaimer">Note: AK Construction ek bank nahi hai. Hum sirf process mein madad karte hain aur lending partners se connect karwate hain — loan approval bank ke apne niyamon par nirbhar hai.</p>
+      </div>
+
+      <div class="emi-card">
+        <h3>EMI Calculator</h3>
+        <div class="sub">Andaza lagayein ki monthly EMI kitni ho sakti hai</div>
+
+        <div class="emi-field">
+          <label>Loan Amount <span class="val" id="loanAmtVal">₹15,00,000</span></label>
+          <input type="range" id="loanAmt" min="200000" max="5000000" step="50000" value="1500000">
+        </div>
+        <div class="emi-field">
+          <label>Interest Rate (per year) <span class="val" id="rateVal">9.5%</span></label>
+          <input type="range" id="rate" min="7" max="14" step="0.1" value="9.5">
+        </div>
+        <div class="emi-field">
+          <label>Tenure (years) <span class="val" id="tenureVal">15 yrs</span></label>
+          <input type="range" id="tenure" min="5" max="30" step="1" value="15">
+        </div>
+
+        <div class="emi-out">
+          <div><div class="lbl">Estimated Monthly EMI</div><div class="amt" id="emiOut">₹15,657</div></div>
+        </div>
+        <p class="loan-disclaimer">Actual EMI aapke bank ke terms par nirbhar karega. Yeh sirf ek anumaan hai.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Hamara Kaam</div>
+      <h2>Recent Projects</h2>
+      <p>Begusarai aur aas-paas ke kuch complete aur chalu projects.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><span>REPLACE WITH<br>REAL PROJECT PHOTO<br>— Begusarai</span></div>
+      <div class="gallery-item"><span>REPLACE WITH<br>REAL PROJECT PHOTO<br>— Munger</span></div>
+      <div class="gallery-item"><span>REPLACE WITH<br>REAL PROJECT PHOTO<br>— Samastipur</span></div>
+      <div class="gallery-item"><span>REPLACE WITH<br>REAL PROJECT PHOTO<br>— Khagaria</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE ============ -->
+<section id="about" style="background:var(--paper-dim);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Hum Hi Kyun</div>
+      <h2>Why Bihar Families Choose AK Construction</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><div class="why-num">01</div><div><h4>GST Registered Business</h4><p>Har billing transparent aur legal — koi chhupi hui charge nahi.</p></div></div>
+      <div class="why-item"><div class="why-num">02</div><div><h4>Sthaniya Team</h4><p>Begusarai ki mitti, mausam aur material rates humein achhe se pata hai.</p></div></div>
+      <div class="why-item"><div class="why-num">03</div><div><h4>Transparent Pricing</h4><p>Cost calculator se hi andaza mil jaata hai — surprise nahi.</p></div></div>
+      <div class="why-item"><div class="why-num">04</div><div><h4>Free Site Visit</h4><p>Final quote se pehle engineer khud plot dekhne aata hai.</p></div></div>
+      <div class="why-item"><div class="why-num">05</div><div><h4>Seedha Engineer Se Baat</h4><p>Koi salesman middleman nahi — architect/engineer se direct baat.</p></div></div>
+      <div class="why-item"><div class="why-num">06</div><div><h4>Naksha se Finishing Tak</h4><p>Ek hi team, poora project — coordination ka jhanjhat khatam.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Customer Feedback</div>
+      <h2>Log Kya Kehte Hain</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="ph-title">Placeholder — Real Review Add Karein</div>
+        <p>Yahan par apne Google ya Justdial se ek real customer review copy karke daalein, saath mein customer ka naam aur unka gaon/shehar.</p>
+      </div>
+      <div class="testi-card">
+        <div class="ph-title">Placeholder — Real Review Add Karein</div>
+        <p>Recent complete hue project ke customer se short feedback lein aur yahan photo ke saath add karein — trust banane ke liye yeh sabse zaruri hai.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" style="background:var(--paper-dim);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Sawal Jawab</div>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list" id="faqList">
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Ghar banane mein kitna time lagta hai?</span><span class="icon">+</span></button>
+        <div class="faq-a"><p>Ek standard 2-3 BHK ghar mein aam taur par 6-9 mahine lagte hain, size, design aur mausam par nirbhar karta hai. Exact timeline site visit ke baad diya jaata hai.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Kya aap Bihar ke doosre shehron mein bhi kaam karte hain?</span><span class="icon">+</span></button>
+        <div class="faq-a"><p>Haan, Begusarai ke alawa hum Munger, Khagaria, Samastipur, Lakhisarai, Patna, Muzaffarpur, Darbhanga aur Bhagalpur mein bhi projects handle karte hain.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Naksha banane ka charge kya hai?</span><span class="icon">+</span></button>
+        <div class="faq-a"><p>Naksha ka charge plot size aur design complexity par nirbhar karta hai. WhatsApp par apna plot size bhejein, hum turant estimate denge.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Home loan mein kya madad milegi?</span><span class="icon">+</span></button>
+        <div class="faq-a"><p>Hum documentation taiyaar karne aur bank/NBFC partners se connect karwane mein madad karte hain. Loan approval bank ke apne process par nirbhar hai.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q"><span>Payment kaise hota hai?</span><span class="icon">+</span></button>
+        <div class="faq-a"><p>Payment construction ke stages ke hisaab se hota hai (foundation, structure, finishing) — poora breakdown quote ke saath diya jaata hai, sab transparent aur likhit mein.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Sampark Karein</div>
+      <h2>Chaliye, Aapke Ghar Ki Baat Karte Hain</h2>
+      <p>Form bharein ya seedha WhatsApp/call karein — jo aapko aasan lage.</p>
+    </div>
+
+    <div class="contact-shell">
+      <div class="contact-form-side">
+        <h3>Free Estimate Mangwayein</h3>
+        <div class="sub">24 ghanton mein reply milega.</div>
+        <form onsubmit="event.preventDefault(); alert('Dhanyavaad! Hum jald hi aapse sampark karenge.');">
+          <div class="form-two">
+            <div class="form-row"><label for="name">Naam</label><input type="text" id="name" required></div>
+            <div class="form-row"><label for="mobile">Mobile Number</label><input type="tel" id="mobile" required></div>
+          </div>
+          <div class="form-two">
+            <div class="form-row"><label for="townInput">Shehar / Gaon</label><input type="text" id="townInput"></div>
+            <div class="form-row"><label for="plotSize">Plot Size (sq. ft.)</label><input type="number" id="plotSize"></div>
+          </div>
+          <div class="form-row"><label for="msg">Message</label><textarea id="msg" rows="3"></textarea></div>
+          <button type="submit" class="btn btn-terracotta" style="width:100%;">Estimate Ke Liye Bhejein →</button>
+        </form>
+      </div>
+
+      <div class="contact-map-side">
+        <h4>AK Construction</h4>
+        <div class="addr-line"><span class="k">Office</span><span>Baghi Gandhi Chowk, Near Harijan School, Begusarai, Bihar</span></div>
+        <div class="addr-line"><span class="k">Phone</span><span><a href="tel:+918770418045">+91 87704 18045</a></span></div>
+        <div class="addr-line"><span class="k">Email</span><span><a href="mailto:akconstruction709@gmail.com">akconstruction709@gmail.com</a></span></div>
+        <div class="addr-line"><span class="k">GSTIN</span><span>10DSMPK8258P1Z1</span></div>
+
+        <div class="map-embed">
+          <iframe src="https://maps.google.com/maps?q=AK%20Construction%20Begusarai%20Bihar&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" title="AK Construction office location map"></iframe>
+        </div>
+
+        <div class="contact-socials">
+          <a class="soc-btn" href="https://wa.me/918770418045" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+          <a class="soc-btn" href="tel:+918770418045" aria-label="Call">📞</a>
+          <a class="soc-btn" href="mailto:akconstruction709@gmail.com" aria-label="Email">✉</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">AK Construction</span>
+        <p>Begusarai, Bihar based home design aur construction company. Naksha se finishing tak, ek hi team, poori transparency ke saath.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">2D / 3D Naksha</a></li>
+          <li><a href="#services">Full Construction</a></li>
+          <li><a href="#services">Interior Design</a></li>
+          <li><a href="#services">Exterior Design</a></li>
+          <li><a href="#services">Landscaping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Areas We Serve</h5>
+        <div class="tag-row">
+          <span class="tag-chip">Begusarai</span>
+          <span class="tag-chip">Munger</span>
+          <span class="tag-chip">Khagaria</span>
+          <span class="tag-chip">Samastipur</span>
+          <span class="tag-chip">Lakhisarai</span>
+          <span class="tag-chip">Patna</span>
+          <span class="tag-chip">Muzaffarpur</span>
+          <span class="tag-chip">Darbhanga</span>
+          <span class="tag-chip">Bhagalpur</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AK Construction · GSTIN 10DSMPK8258P1Z1</span>
+      <span>Baghi Gandhi Chowk, Near Harijan School, Begusarai, Bihar</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE STICKY BAR ============ -->
+<div class="mobile-bar">
+  <div class="mobile-bar-inner">
+    <a class="call" href="tel:+918770418045">📞 Call Now</a>
+    <a class="wa" href="https://wa.me/918770418045?text=Namaste%2C%20mujhe%20ghar%20banwana%20hai%2C%20please%20details%20bhejein." target="_blank" rel="noopener">💬 WhatsApp</a>
+  </div>
+</div>
+
+<script>
+  // ===== FAQ accordion =====
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){
+        i.classList.remove('open');
+        i.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // ===== Cost calculator =====
+  var areaInput = document.getElementById('area');
+  var floorsInput = document.getElementById('floors');
+  var cityInput = document.getElementById('city');
+  var tierBtns = document.querySelectorAll('.tier-btn');
+  var resultAmount = document.getElementById('resultAmount');
+  var currentRate = 1750;
+
+  function formatINR(num){
+    return '₹' + Math.round(num).toLocaleString('en-IN');
+  }
+
+  function calcCost(){
+    var area = parseFloat(areaInput.value) || 0;
+    var floors = parseFloat(floorsInput.value) || 1;
+    var cityFactor = parseFloat(cityInput.value) || 1;
+    var base = area * floors * currentRate * cityFactor;
+    var low = base * 0.95;
+    var high = base * 1.10;
+    resultAmount.textContent = formatINR(low) + ' – ' + formatINR(high);
+  }
+
+  tierBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tierBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentRate = parseFloat(btn.dataset.rate);
+      calcCost();
+    });
+  });
+  [areaInput, floorsInput, cityInput].forEach(function(el){
+    el.addEventListener('input', calcCost);
+    el.addEventListener('change', calcCost);
+  });
+  calcCost();
+
+  // ===== EMI calculator =====
+  var loanAmt = document.getElementById('loanAmt');
+  var rate = document.getElementById('rate');
+  var tenure = document.getElementById('tenure');
+  var loanAmtVal = document.getElementById('loanAmtVal');
+  var rateVal = document.getElementById('rateVal');
+  var tenureVal = document.getElementById('tenureVal');
+  var emiOut = document.getElementById('emiOut');
+
+  function calcEMI(){
+    var P = parseFloat(loanAmt.value);
+    var annualR = parseFloat(rate.value);
+    var years = parseFloat(tenure.value);
+    var r = annualR / 12 / 100;
+    var n = years * 12;
+    var emi = (P * r * Math.pow(1+r, n)) / (Math.pow(1+r, n) - 1);
+
+    loanAmtVal.textContent = formatINR(P);
+    rateVal.textContent = annualR.toFixed(1) + '%';
+    tenureVal.textContent = years + ' yrs';
+    emiOut.textContent = formatINR(emi);
+  }
+  [loanAmt, rate, tenure].forEach(function(el){ el.addEventListener('input', calcEMI); });
+  calcEMI();
+</script>
+
+</body>
+</html>
