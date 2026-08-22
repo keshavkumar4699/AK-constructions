@@ -58,7 +58,7 @@
   var cityNote = document.getElementById('cityNote');
 
   if (areaInput && floorsInput && cityInput && resultAmount) {
-    var currentRate = 1750;
+    var currentRate = 2200;
 
     function calcCost() {
       var area = parseFloat(areaInput.value) || 0;
@@ -151,7 +151,7 @@
       fallbackShown = true;
       reviewList.innerHTML =
         '<div class="testi-card"><div class="ph-title">Review Yahan Aayega</div>' +
-        '<p>Google se real reviews auto-load honge — iske liye tools/fetch-reviews.js chalayein (REVIEWS-GUIDE.md dekhein). Tab tak, aapke 5.0\u2605 rating aur 26 reviews Google/Justdial par live hain.</p></div>' +
+        '<p>Google se real reviews auto-load honge — iske liye tools/fetch-reviews.js chalayein (REVIEWS-GUIDE.md dekhein). Tab tak, aapke 4.9\u2605 rating aur 115 reviews Google/Justdial par live hain.</p></div>' +
         '<div class="testi-card"><div class="ph-title">Review Yahan Aayega</div>' +
         '<p>Apne recent customers se Google par review likhwane ke liye, unhe yeh short link bhejein: apna review likhne ka link Contact page par milta hai.</p></div>';
     }
@@ -164,6 +164,41 @@
         reviewList.innerHTML = items.map(cardHTML).join('');
       })
       .catch(showFallback);
+  }
+
+  /* ===== Naksha slider (home hero) ===== */
+  var nakshaSlider = document.getElementById('nakshaSlider');
+  if (nakshaSlider) {
+    var track = document.getElementById('nakshaTrack');
+    var slides = track.querySelectorAll('img');
+    var dotsWrap = document.getElementById('nakshaDots');
+    var prevBtn = document.getElementById('nakshaPrev');
+    var nextBtn = document.getElementById('nakshaNext');
+    var idx = 0;
+    var dots = [];
+
+    slides.forEach(function (_, i) {
+      var d = document.createElement('button');
+      d.type = 'button';
+      d.setAttribute('aria-label', 'Naksha ' + (i + 1));
+      d.addEventListener('click', function () { goTo(i); });
+      dotsWrap.appendChild(d);
+      dots.push(d);
+    });
+
+    function render() {
+      track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+      dots.forEach(function (d, i) { d.classList.toggle('active', i === idx); });
+    }
+
+    function goTo(i) {
+      idx = (i + slides.length) % slides.length;
+      render();
+    }
+
+    prevBtn.addEventListener('click', function () { goTo(idx - 1); });
+    nextBtn.addEventListener('click', function () { goTo(idx + 1); });
+    render();
   }
 
   /* ===== Contact form (front-end only; opens WhatsApp with details) ===== */

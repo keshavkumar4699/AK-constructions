@@ -6,7 +6,7 @@ jaate hain. Har step 15 minute se zyada nahi leta. Priority order mein karein.
 **Aapka listing:** AK Construction (Home Designing)
 **Place ID:** 0xda0f634c2a05b771:0x39f21b749ead6003
 **Review short-link (customers ko bhejein):**
-https://search.google.com/local/writereview?placeid=0xda0f634c2a05b771:0x39f21b749ead6003
+https://tinyurl.com/4sn3bjbs
 
 ---
 
@@ -59,8 +59,8 @@ utna bharosa:
 - [ ] **Sulekha, IndiaMART, Angdesh, Facebook** — free listing ya profile complete karein
       (Facebook par website link add karein: akconstructionhomedesign.com)
 - [ ] **Website → Business Profile link** (already done — footer aur contact par maps link hai)
-- [ ] Website ke footer ka address = Google profile ka address (already match: Baghi Gandhi
-      Chowk, Near Harijan School, Begusarai)
+- [ ] Website ke footer ka address = Google profile ka address (already match: Milan Chowk,
+      Begusarai)
 
 ## Phase 5 — Website SEO (is package mein already ready)
 

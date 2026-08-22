@@ -6,7 +6,7 @@ auto-load karti hai. Is file mein reviews daalne ke 3 tareeke:
 | Tareeka | Kitne reviews | Mehnat | Kab use karein |
 |---|---|---|---|
 | A. Script (Places API) | 5 (Google ki limit) | 10 minute | Pehli baar setup |
-| B. Manual copy-paste | Jitne chahein (26+) | 15-20 minute | Behtar result ke liye |
+| B. Manual copy-paste | Jitne chahein (115+) | 15-20 minute | Behtar result ke liye |
 | C. Dono saath mein | Sab | Dono | Recommended |
 
 ---
@@ -54,7 +54,7 @@ phir `http://localhost:8000/reviews.html` kholen.
 
 ---
 
-## Tareeka B — Manual copy-paste (saare 26+ reviews ke liye)
+## Tareeka B — Manual copy-paste (saare 115+ reviews ke liye)
 
 Places API **max 5 reviews** deta hai (Google ki limitation, hamari nahi). Saare reviews dikhane hain to:
 
@@ -92,8 +92,8 @@ kar dein. `reviews.json` mein dono merge ho jaate hain.
 - **Places API sirf 5 reviews deta hai** — chahe aapke paas 100 hon. Yeh Google ka rule hai.
 - Google Takeout se bhi aapke *received* reviews ka full text nahi milta (sirf count/profile data
   milta hai). Isliye manual copy hi ek rasta hai full text ke liye.
-- Justdial ke 26 reviews bhi manual hi copy karne honge (Justdial ka koi free API nahi).
-- Website par rating summary (5.0★, 26 reviews) hamesha dikhta hai — wo static hai, reviews.json
+- Justdial ke 115 reviews bhi manual hi copy karne honge (Justdial ka koi free API nahi).
+- Website par rating summary (4.9★, 115 reviews) hamesha dikhta hai — wo static hai, reviews.json
   par depend nahi karta. Isliye reviews ke bina bhi site puri tarah theek dikhegi.
 
 ---

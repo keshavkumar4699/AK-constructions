@@ -1,8 +1,33 @@
 {
   "source": "Google Maps",
   "placeId": "0xda0f634c2a05b771:0x39f21b749ead6003",
-  "rating": 5.0,
-  "reviewCount": 26,
-  "reviews": [],
-  "updated": ""
+  "rating": 4.9,
+  "reviewCount": 115,
+  "reviews": [
+    {
+      "name": "Sunny Kumar",
+      "rating": 5,
+      "text": "AK Construction Team, especially Nitish Ji, is very customer focused and professional. He listens carefully to customer requirements and makes revisions until complete satisfaction is achieved. I am very happy with their planning and design services. I would highly recommend go with one and only AK construction for your dream home.",
+      "time": "a month ago"
+    },
+    {
+      "name": "Harsh",
+      "rating": 5,
+      "text": "Thanks you first NITISH SIR, He is very friendly towards people And nice service and Fast service. Make sure that AK CONSTRUCTION is very affordable and reliable for Making Map or house plan and with in good guidance. So I recommend that make the floor plan and house plan with AK Construction.",
+      "time": "a month ago"
+    },
+    {
+      "name": "Saket Saurabh",
+      "rating": 5,
+      "text": "Excellent service from Nitish Ji! Delivered precise house plans with smart space optimization, including kitchen, living area, bedroom, and seamless staircase integration. Professional, code-compliant, and ready for approvals. Top-notch work—highly recommend for any home design needs!",
+      "time": "7 months ago"
+    },
+    {
+      "name": "Vijay Kumar Das",
+      "rating": 5,
+      "text": "Had great experience with A K Construction. They were patient with our changing requirements and worked on them enthusiastically. Optimum use of space was done, giving us a sophisticated design for our home. I found them easily reachable for any doubts or questions which I had. They provide a good design and are readily available for advice on best materials to be used for the project.",
+      "time": "a year ago"
+    }
+  ],
+  "updated": "2026-08-22"
 }

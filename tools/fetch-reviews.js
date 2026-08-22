@@ -17,8 +17,10 @@
  *   node tools/fetch-reviews.js 0xda0f634c2a05b771:0x39f21b749ead6003
  *
  * Note: Places API (New) free tier par reviews field ke saath at most 5 reviews
- * return karta hai. Saare 26+ reviews dikhane ke liye reviews.json mein manually
+ * return karta hai. Saare 115+ reviews dikhane ke liye reviews.json mein manually
  * copy-paste karein (REVIEWS-GUIDE.md mein steps hain).
+ * Manual reviews preserve kiye jaate hain — script sirf API ke fresh 5 reviews
+ * merge karta hai (duplicates skip hoti hain).
  */
 
 const fs = require('fs');
@@ -58,24 +60,44 @@ async function main() {
 
   const data = await res.json();
 
-  const reviews = (data.reviews || []).map((r) => ({
+  const apiReviews = (data.reviews || []).map((r) => ({
     name: r.authorAttribution ? r.authorAttribution.displayName : 'Google User',
     rating: r.rating || 5,
     text: (r.text && r.text.text) ? r.text.text : '',
     time: r.relativePublishTimeDescription || ''
   }));
 
+  let existing = { reviews: [] };
+  try {
+    const raw = fs.readFileSync(OUT_FILE, 'utf8');
+    const parsed = JSON.parse(raw);
+    if (parsed && Array.isArray(parsed.reviews)) existing = parsed;
+  } catch (err) {
+    console.log('Purani reviews.json nahi mili ya invalid thi — nayi file banegi.');
+  }
+
+  const existingKeys = new Set(
+    existing.reviews.map((r) => (r.name || '') + '::' + (r.text || '')).filter((k) => k !== '::')
+  );
+
+  const fresh = apiReviews.filter((r) => {
+    const key = (r.name || '') + '::' + (r.text || '');
+    if (!key || existingKeys.has(key)) return false;
+    existingKeys.add(key);
+    return true;
+  });
+
   const out = {
     source: 'Google Maps',
     placeId: PLACE_ID,
-    rating: data.rating || null,
-    reviewCount: data.userRatingCount || null,
-    reviews: reviews,
+    rating: data.rating || existing.rating || null,
+    reviewCount: data.userRatingCount || existing.reviewCount || null,
+    reviews: fresh.concat(existing.reviews),
     updated: new Date().toISOString()
   };
 
   fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2) + '\n', 'utf8');
-  console.log(`Ho gaya! ${reviews.length} review save hue: ${OUT_FILE}`);
+  console.log(`Ho gaya! ${fresh.length} naye review save hue (manual wale bhi safe hain): ${OUT_FILE}`);
   console.log(`Rating: ${out.rating} | Total reviews (Google): ${out.reviewCount}`);
   console.log('Note: API sirf 5 reviews deta hai. Baaki reviews manually add karne ke liye REVIEWS-GUIDE.md dekhein.');
 }
